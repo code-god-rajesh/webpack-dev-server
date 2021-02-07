@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => setState('CLICKED')}>{state}</button>
+      <a href="https://code-god-team.github.io/webpack-dev-server/">
+        CLICK Here
+      </a>
       <button onClick={() => setState('CLICKED')}>{state}</button>
     </div>
   );
