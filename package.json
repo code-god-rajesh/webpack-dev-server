@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
+  "homepage": "https://code-god-team.github.io/webpack-dev-server",
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack serve --open",
