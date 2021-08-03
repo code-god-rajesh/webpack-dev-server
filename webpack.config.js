@@ -7,7 +7,14 @@ module.exports = {
     index: path.resolve(__dirname, 'docs', 'app.js'),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].[contenthash].js',
+  },
+  devServer: {
+    contentBase: 'build',
+    historyApiFallback: true,
+    port: 3000,
+    inline: true,
   },
   module: {
     rules: [

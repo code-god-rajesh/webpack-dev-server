@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import './style.scss';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './Routes';
 function App() {
-  const [state, setState] = useState('CLICK ME');
-
   return (
-    <div>
-      <a href="https://code-god-team.github.io/webpack-dev-server/">
-        CLICK Here
-      </a>
-      <button onClick={() => setState('CLICKED')}>{state}</button>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 
